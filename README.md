@@ -1,0 +1,1 @@
+# pycalc-plugin for intellij
