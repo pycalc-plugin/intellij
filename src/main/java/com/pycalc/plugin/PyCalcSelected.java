@@ -1,4 +1,4 @@
-package com.pycalc.intellij;
+package com.pycalc.plugin;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;

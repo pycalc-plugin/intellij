@@ -1,4 +1,4 @@
-package com.pycalc.intellij;
+package com.pycalc.plugin;
 
 import com.intellij.codeInsight.editorActions.enter.EnterHandlerDelegate;
 import com.intellij.icons.AllIcons;

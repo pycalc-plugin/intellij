@@ -3,7 +3,7 @@ plugins {
   id("org.jetbrains.intellij") version "1.17.4"
 }
 
-group = "com.pycalc.intellij"
+group = "com.pycalc.plugin"
 version = "1.0.0"
 
 repositories {

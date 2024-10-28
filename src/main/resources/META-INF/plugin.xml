@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.pycalc.intellij</id>
+    <id>com.pycalc.plugin</id>
     <name>pycalc</name>
     <vendor email="pycalc@proton.me" url="https://github.com/pycalc-plugin/intellij">pycalc</vendor>
     <description>
@@ -7,24 +7,24 @@
     </description>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <enterHandlerDelegate implementation="com.pycalc.intellij.PyCalcHandler" order="after EnterBetweenBracesHandler"/>
+        <enterHandlerDelegate implementation="com.pycalc.plugin.PyCalcHandler" order="after EnterBetweenBracesHandler"/>
         <notificationGroup id="notify" displayType="BALLOON" />
     </extensions>
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.pycalc.intellij.PyCalcState"/>
+        <applicationService serviceImplementation="com.pycalc.plugin.PyCalcState"/>
     </extensions>
     <actions>
         <action
-                id="com.pycalc.intellij.PyCalcHandler"
-                class="com.pycalc.intellij.PyCalcHandler"
+                id="com.pycalc.plugin.PyCalcHandler"
+                class="com.pycalc.plugin.PyCalcHandler"
                 text="pycalc"
                 icon="AllIcons.Debugger.EvaluateExpression">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>
         <action
-                id="com.pycalc.intellij.PyCalcSelected"
-                class="com.pycalc.intellij.PyCalcSelected"
+                id="com.pycalc.plugin.PyCalcSelected"
+                class="com.pycalc.plugin.PyCalcSelected"
                 text="pycalc selected"
                 icon="AllIcons.Debugger.EvaluateExpression">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
