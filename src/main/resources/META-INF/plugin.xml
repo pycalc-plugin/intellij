@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.pycalc.intellij</id>
+    <name>pycalc</name>
+    <vendor email="pycalc@proton.me" url="https://github.com/pycalc-plugin/intellij">pycalc</vendor>
+    <description>
+        <![CDATA[The pycalc plugin enables the execution of python code directly within the editor upon pressing the Enter key.]]>
+    </description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <enterHandlerDelegate implementation="com.pycalc.intellij.PyCalcHandler" order="after EnterBetweenBracesHandler"/>
+        <notificationGroup id="notify" displayType="BALLOON" />
+    </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.pycalc.intellij.PyCalcState"/>
+    </extensions>
+    <actions>
+        <action
+                id="com.pycalc.intellij.PyCalcHandler"
+                class="com.pycalc.intellij.PyCalcHandler"
+                text="pycalc"
+                icon="AllIcons.Debugger.EvaluateExpression">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action
+                id="com.pycalc.intellij.PyCalcSelected"
+                class="com.pycalc.intellij.PyCalcSelected"
+                text="pycalc selected"
+                icon="AllIcons.Debugger.EvaluateExpression">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
