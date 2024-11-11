@@ -3,7 +3,9 @@
     <name>pycalc</name>
     <vendor email="pycalc@proton.me" url="https://github.com/pycalc-plugin/intellij">pycalc</vendor>
     <description>
-        <![CDATA[The pycalc plugin enables the execution of python code directly within the editor upon pressing the Enter key.]]>
+        <![CDATA[The pycalc plugin enables the execution of python code directly within the editor upon pressing the Enter key.<br/>
+<br/>Based on Jython 2.7.<br/><br/>
+<img src="https://github.com/pycalc-plugin/screencast/raw/master/intellij.gif?raw=true" alt="screencast" border=0></a>]]>
     </description>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
