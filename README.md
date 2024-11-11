@@ -4,8 +4,6 @@
 
 The pycalc plugin enables the execution of python code directly within the editor upon pressing the Enter key.
 
-## Release Notes
+Based on Jython 2.7.
 
-### 1.0.0
-
-Initial release
+![screenshot](https://github.com/pycalc-plugin/screencast/blob/9af7ce71f3f940bbada10aa341546feafbd7310b/intellij.gif?raw=true)
