@@ -6,4 +6,4 @@ The pycalc plugin enables the execution of python code directly within the edito
 
 Based on Jython 2.7.
 
-![screenshot](https://github.com/pycalc-plugin/screencast/blob/9af7ce71f3f940bbada10aa341546feafbd7310b/intellij.gif?raw=true)
+![screenshot](https://github.com/pycalc-plugin/screencast/blob/master/intellij.gif?raw=true)
