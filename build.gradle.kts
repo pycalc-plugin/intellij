@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.pycalc.plugin"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
   mavenCentral()
@@ -30,7 +30,8 @@ tasks {
   }
 
   patchPluginXml {
-    sinceBuild.set("191")
+    sinceBuild.set("201")
+    untilBuild.set("243.*")
   }
 
   signPlugin {
